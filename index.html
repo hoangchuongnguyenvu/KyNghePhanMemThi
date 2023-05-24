@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/site.css">
+  <title>Snap | Make remote work </title>
+
+ 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<script src="app.js"></script>
+<body>
+  <div class="header">
+    <div class="header_logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="header_container">
+      <div class="header_menu">
+        <ul>
+          <li>Tính năng
+            <i class="fa-solid fa-angle-down"></i>
+            <ul class="element_menu_1">
+              <li><img src="images/icon-todo.svg" alt=""><p>DanhSách</p></li>
+              <li><img src="images/icon-calendar.svg" alt=""><p>Lịch</p></li>
+              <li><img src="images/icon-reminders.svg" alt=""><p>Lời Nhắc</p></li>
+              <li><img src="images/icon-planning.svg" alt=""><p>KếHoạch</p></li>
+            </ul>
+          </li>
+          <li>Công Ty
+            <i class="fa-solid fa-angle-down"></i>
+            <ul class="element_menu_2">
+              <li>Lịch Sử</li>
+              <li>Đội Ngũ</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Dự Án</li>
+          <li>Về Chúng Tôi</li>
+        </ul>
+      </div>
+      <div class="header_funcion">
+        <button id="login-but"><p>Login</p></button>
+        <button id="register-but"><p>Register</p></button>
+      </div>
+    </div>
+    
+  </div>
+  <div class="container">
+    <div class="left_container">
+      <div class="content_top">
+        <h1>
+          <span>Make</span>
+          <span>remote work</span>
+        </h1>
+      </div>
+      <div class="content_mid">
+        <p>
+          Gắn kết mọi người , bất kể vị trí địa lý như nào
+          
+          
+          Vượt trội về tính năng, nâng cao hiệu suất quản lí , chất lượng hoàn hảo ....</p>
+      </div>
+      <div class="learn_more">
+        <a href=""><p>Xem thêm</p></a>
+      </div>
+      <div class="logo">
+        <img src="images/client-databiz.svg" alt="">
+        <img src="images/client-audiophile.svg" alt="">
+        <img src="images/client-meet.svg" alt="">
+        <img src="images/client-maker.svg" alt="">
+      </div>
+    </div>
+    <div class="right_container">
+      <img src="images/image-hero-desktop.png" alt="">
+    </div>
+  </div>
+  
+
+  <div class="login" id="hide">
+    <form class="form ">
+      <h1>LOGIN</h1>
+      <input class="input" placeholder="Email Address" type="email" required="">
+      <input class="Password" placeholder="Password" type="text">
+      <label class="error">Please provide a valid email</label>
+      <input class="submit" type="submit">
+      <button id="close">Cancel</button>
+    </form>
+
+  </div>
+  <div class="register" id="hide-1">
+      <form class="form-2">
+        <h1>REGISTER</h1>
+        <input class="input" placeholder="Email Address" type="email" required="">
+        <input class="user_name" placeholder="User Name" type="text">
+        <input class="Password" placeholder="Password" type="text">
+        <input class="Confirm_Password" placeholder="Confirm password" type="text">
+        <label class="error">Please provide a valid email</label>
+        <input class="submit" type="submit">
+        <button id="close-2">Cancel</button>
+      </form>
+
+  </div>
+  <script>
+    
+    document.getElementById("login-but").onclick = function() {
+      document.getElementById("hide").style.display = 'block'
+    }
+    document.getElementById("close").onclick =  function () {
+      document.getElementById("hide").style.display = 'none'
+    }
+    document.getElementById("register-but").onclick = function() {
+      document.getElementById("hide-1").style.display = 'block'
+    }
+    document.getElementById("close-2").onclick = function() {
+      document.getElementById("hide-1").style.display = 'none'
+    }
+   
+  </script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.header_container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.header_logo{
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.header_menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+.header_menu ul :hover{
+    color: #000;
+}
+.header_menu li{
+    color: #8c8c8c;
+    margin-right: 50px;
+    font-size: 15px;
+    position: relative;
+}
+.header_menu i{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.element_menu_1{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 170px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 15px 10px #dadada;
+}
+.element_menu_1 :hover{
+    color: #000;
+}
+.element_menu_1 li{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.header_menu ul.element_menu_1{
+    position: absolute;
+    display: none;
+}
+.header_menu li:hover ul.element_menu_1{
+  display: block;
+  position: absolute;
+}
+.element_menu_2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 120px;
+    height: 130px;
+    box-shadow: 0 0 15px 10px #dadada;
+}
+.element_menu_2 li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.header_menu ul.element_menu_2{
+    position: absolute;
+    display: none;
+}
+.header_menu li:hover ul.element_menu_2{
+    display: block;
+  }
+.header_funcion
+{
+    display: flex;
+    position: sticky;
+    right: 20px;
+    margin-top: 5px;
+}
+.header_funcion p{
+    font-size: 12px;
+    padding-top: 5px;
+    margin: auto;
+    
+}
+.header_funcion button{
+    background-color: #fff;
+    border: none;
+    margin-right: 20px;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    width: 100px;
+    height: 40px
+    /* border-radius: 40px;
+    margin-right: 50px;
+    width: 200px;
+    height: 50px */
+}
+.header_funcion button :hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin-right: 5px;
+    width: 100px;
+    height: 40px
+
+}
+.header_funcion button > p:hover {
+    padding-top: 9.5px;
+}
+.container{
+    width: 1130px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.left_container{
+    width: 675px;
+    height: 700px;
+}
+.right_container{
+    width: 455px;
+    height: 700px;
+}
+.right_container img{
+    width:  500px;
+    height: 699px;
+}
+.left_container span{
+    display: block;
+}
+.content_top{
+    margin-top: 200px;
+}
+.content_top h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.content_mid {
+    margin-bottom: 50px;
+}
+.content_mid p{
+    font-size: 20px;
+    width: 400px;
+    color: #8c8c8c;
+}
+.learn_more{
+    margin-bottom: 110px;
+}
+.learn_more a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.learn_more a:hover{
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+.learn_more p{
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.logo img+img{
+    margin-left: 50px;
+}
+.form {
+    display: block;
+    border-radius: 15px;
+    width: 500px;
+    height: 500px;
+    background-color: #f8b9a2;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+}
+.form h1{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.input {
+    padding: 1px 0 0 7%;
+    font-size: 16px;
+}
+.input, .submit, .Password, #close{
+    margin-top: 30px;
+    width: 400px;
+    height: 56px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+.submit{
+    background-color: #feb381;
+}
+.submit:hover{
+    background-color: #feb38182;
+}
+input {
+    width: 100%;
+    font-size: 14px;
+}
+.error {
+    left: 13.7%;
+    margin-top: 105px;
+}
+.error {
+    visibility: hidden;
+    position: absolute;
+    left: 55px;
+    margin-top: 90px;
+    color: #c79699;
+    font-size: 13px;
+}
+.Password{
+    padding: 1px 0 0 7%;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.login{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background:  rgba(0, 0, 0, 0.6);
+}
+#close{
+ font-size: 16px;
+ background-color: #feb381;
+}
+#close:hover{
+    background-color: #feb38182;
+}
+#hide{
+   display: none;
+}
+
+.form-2 {
+    display: block;
+    border-radius: 15px;
+    width: 500px;
+    height: 660px;
+    background-color: #f8b9a2;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+}
+.form-2 h1{
+    margin-left: 170px;
+    margin-top: 50px;
+}
+.input {
+    padding: 1px 0 0 7%;
+    font-size: 16px;
+}
+.input, .submit, .Password, #close-2, .user_name, .Confirm_Password{
+    margin-top: 30px;
+    width: 400px;
+    height: 56px;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+.user_name{
+    font-size: 16px;
+    padding: 1px 0 0 7%;
+}
+.Confirm_Password{
+    font-size: 16px;
+    padding: 1px 0 0 7%;
+}
+.submit{
+    background-color: #feb381;
+}
+.submit:hover{
+    background-color: #feb38182;
+}
+input {
+    width: 100%;
+    font-size: 14px;
+}
+.error {
+    left: 13.7%;
+    margin-top: 105px;
+}
+.error {
+    visibility: hidden;
+    position: absolute;
+    left: 55px;
+    margin-top: 90px;
+    color: #c79699;
+    font-size: 13px;
+}
+.Password{
+    padding: 1px 0 0 7%;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.register{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background:  rgba(0, 0, 0, 0.6);
+}
+#close-2{
+    font-size: 16px;
+    background-color: #feb381;
+}
+#close-2:hover{
+       background-color: #feb38182;
+}
+#hide-1{
+    display: none;
+}
+
+
+
+
+
